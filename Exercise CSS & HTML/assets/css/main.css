@@ -1,0 +1,173 @@
+/* reset css */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* header */
+.header {
+  width: 100%;
+  background-color: black;
+  height: 46px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+#nav,
+.subnav {
+  list-style-type: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav,
+#nav > li {
+  display: inline-block;
+}
+
+#nav li {
+  position: relative;
+}
+
+#nav > li > a {
+  color: white;
+  text-transform: uppercase;
+}
+
+#nav li a {
+  line-height: 46px;
+  text-decoration: none;
+  padding: 0 24px;
+  display: block;
+}
+
+.nav-arrow-down {
+  color: white;
+  font-size: 14px;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+  background-color: gray;
+  color: black;
+}
+
+#nav li:hover .subnav {
+  display: block;
+}
+
+#nav .subnav {
+  display: none;
+  top: 46px;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+}
+
+#nav .subnav a {
+  font-size: 15px;
+  color: black;
+  padding: 0px 16px;
+  line-height: 38px;
+}
+
+.header .search-btn {
+  float: right;
+  line-height: 46px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.header .search-btn:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+.header .header-search-icon {
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* slider */
+.slider {
+  position: relative;
+  padding-top: 50%;
+  margin-top: 46px;
+  background: url("/assets/img/la.jpg") top center / cover no-repeat;
+}
+
+.slider .slider-text {
+  position: absolute;
+  bottom: 43px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+}
+
+.slider-text h3 {
+  margin: 15px 0;
+  font-weight: 100;
+}
+
+.slider-text p {
+  font-weight: 700;
+}
+
+/* content */
+
+/* about */
+#content .section {
+  margin: 0 70px;
+  padding: 64px 16px;
+  text-align: center;
+  width: 800px;
+}
+
+.section .heading-content {
+  text-transform: uppercase;
+  margin: 15px;
+  font-size: 30px;
+  font-weight: 100;
+  letter-spacing: 4px;
+}
+
+.section .sub-heading {
+  margin-bottom: 15px;
+  font-style: italic;
+  font-size: 15px;
+  opacity: 0.7;
+}
+.section .main-content {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.member-list {
+  padding: 32px 0;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
+
+.member-name {
+  margin: 15px 0;
+  font-size: 15px;
+}
+
+.member-img {
+  width: 154px;
+  height: 154px;
+}
+
+
